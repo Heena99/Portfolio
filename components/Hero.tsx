@@ -28,7 +28,7 @@ const Hero = () => {
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>Hi, I am Heena, a frontend developer based in India.</p>
 
                     <a href="#about">
-                    <ButtonCard title="Show my work" icon={<FaLocationArrow/>} position='right'/>
+                    <ButtonCard title="About me" icon={<FaLocationArrow/>} position='right'/>
                     </a>
 
                 </div>
