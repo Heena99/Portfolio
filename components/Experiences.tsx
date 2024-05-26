@@ -24,7 +24,7 @@ const Experience = () => {
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 relative">
-                <div className="text-sm absolute top-5 right-5">{card.duration}</div>
+                <div className="text-sm absolute top-3 right-5">{card.duration}</div>
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
