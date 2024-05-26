@@ -187,6 +187,15 @@ const config = {
         { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
       );
     },
+    function({ addUtilities }: any) {
+      const newUtilities = {
+        '.backdrop-blur-3xl': {
+          '-webkit-backdrop-filter': 'blur(64px)',
+          'backdrop-filter': 'blur(64px)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
   ],
 } satisfies Config;
 
