@@ -116,7 +116,7 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
           {id === 2 &&
             <div className="absolute bottom-2 right-5 text-[10px] z-50">
-              Pssst...try moving this globe. Isn't it cool?
+              Pssst...try moving this globe. Isn&apos;t it cool?
             </div>
           }
 
