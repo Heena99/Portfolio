@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json"
 import ButtonCard from "./ButtonCard";
 import { IoCopyOutline } from "react-icons/io5";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 export const BentoGrid = ({
   className,
@@ -113,6 +114,11 @@ export const BentoGridItem = ({
 
 
           {id === 2 && <GlobeDemo />}
+          {id === 2 &&
+            <div className="absolute bottom-2 right-5 text-[10px] z-50">
+              Pssst...try moving this globe. Isn't it cool?
+            </div>
+          }
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -123,7 +129,7 @@ export const BentoGridItem = ({
                 <span className="py-4 px-3 text-xs rounded-lg text-center bg-[#10132e]"></span>
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-              <span className="py-4 px-3 text-xs rounded-lg text-center bg-[#10132e]"></span>
+                <span className="py-4 px-3 text-xs rounded-lg text-center bg-[#10132e]"></span>
                 {['WebSockets', 'Tailwind', 'JS/TS'].map((item) =>
                   <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
                 )}
@@ -146,7 +152,7 @@ export const BentoGridItem = ({
                   loop: copied,
                   autoplay: copied,
                   animationData,
-                  rendererSettings:{
+                  rendererSettings: {
                     preserveAspectRatio: "xMidYMid slice"
                   }
                 }} height={200} width={400} />
